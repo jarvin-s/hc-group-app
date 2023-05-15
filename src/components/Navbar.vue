@@ -2,7 +2,7 @@
     <header class="sticky top-0 bg-white shadow-lg">
         <nav class="container flex flex-col sm:flex-row items-center gap-3 text-black py-3">
             <RouterLink :to="'/'">
-                <img src="public/logo.svg" alt="HC Group">
+                <img src="/logo.svg" alt="HC Group">
             </RouterLink>
             <RouterLink :to="'/'">
                 <div class="flex items-center gap-3 flex-1">
