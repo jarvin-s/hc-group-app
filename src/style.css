@@ -49,6 +49,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+svg:hover {
+  fill: grey;
+}
+
 .card {
   padding: 2em;
 }
