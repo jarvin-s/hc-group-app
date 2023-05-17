@@ -1,5 +1,5 @@
 <template>
-    <div class="flex place-content-center px-4 py-3">
+    <div class="flex flex-col place-content-center sm:flex-row px-4 py-3">
         <label class="px-2">Year</label>
         <select v-model="selectedYear" @change="filterTable"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -20,14 +20,17 @@
             </option>
         </select>
     </div>
-    <div class="grid place-items-center overflow-x-auto sm:flex-row">
-        <table class="text-sm text-left text-gray-500 sm:table-row dark:text-gray-400">
+    <div class="grid place-items-center p-5 overflow-auto">
+        <table class="overflow-auto flex-row text-sm text-left text-gray-500 sm:table-row dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr class="sm:table-row">
-                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Project
+                <tr>
+                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Project
                     </th>
-                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Year</th>
-                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Language
+                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Year
+                    </th>
+                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Language
                     </th>
                     <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         Development</th>
@@ -47,7 +50,6 @@
 </template>
   
 <script>
-
 export default {
     data() {
         return {
