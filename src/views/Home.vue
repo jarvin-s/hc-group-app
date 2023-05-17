@@ -27,13 +27,15 @@
                     <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         Project
                     </th>
-                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Year
+                    <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Year
                     </th>
                     <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         Language
                     </th>
                     <th scope="col" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Development</th>
+                        Development
+                    </th>
                 </tr>
             </thead>
             <tbody>
