@@ -12,6 +12,12 @@
                         Home</p>
                 </div>
             </RouterLink>
+            <RouterLink :to="'/repos'">
+                <div class="flex items-center gap-3 flex-1">
+                    <p class="hover:text-sky-600 transition-color duration-200 rounded-md px-3 py-2 text-base font-medium">
+                        Repos</p>
+                </div>
+            </RouterLink>
             <div class="flex justify-between items-center hidden sm:block">
                 <a target="_blank" href="https://github.com/jarvin-s/hc-group-app"
                     className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">

@@ -7,10 +7,10 @@ const routes = [
         component: () => import('@/views/Home.vue')
     },
     {
-        path: '/about',
-        name: 'about',
-        component: () => import('@/views/About.vue')
-    },
+        path: '/repos',
+        name: 'repos',
+        component: () => import('@/views/Repos.vue')
+    }
 ]
 
 const router = createRouter({
