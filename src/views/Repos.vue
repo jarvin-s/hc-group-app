@@ -18,7 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="repo in filteredRepos" :key="repo.id"
+                <tr v-for="repo in repos" :key="repo.id"
                     class="border-b dark:bg-gray-800 dark:border-gray-700 sm:table-row hover:bg-gray-50 dark:hover:bg-gray-600">
                     <a :href="repo.html_url" target="_blank">
                         <td class="px-6 py-4">{{ repo.name }}</td>
@@ -34,8 +34,7 @@
 export default {
     data() {
         return {
-            repos: [],
-            filteredRepoName: "meepspeak"
+            repos: []
         }
     },
     async mounted() {
@@ -44,11 +43,6 @@ export default {
             this.repos = await response.json();
         } catch (error) {
             console.log(error);
-        }
-    },
-    computed: {
-        filteredRepos() {
-            return this.repos.filter(repo => repo.name !== this.filteredRepoName);
         }
     }
 }
